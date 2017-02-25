@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en-us">
 <head>
 	<meta charset="utf-8">
@@ -8,6 +7,7 @@
 	</title>
 	<link rel="stylesheet" type="text/css" href="assets/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="assets/style.css">
+	<script src="https://code.jquery.com/jquery.js"></script>
 </head>
 
 <body>
@@ -20,7 +20,7 @@
 				<form>
 						  <div class="searchTermBox">
 						    <label for="search">Search Term</label>
-						    <input type="search" class="form-control" id="searchTerm" placeholder="SEARCH">
+						    <input type="input" class="form-control" id="searchTerm" placeholder="SEARCH">
 						  </div>
 						  <div class="recordNumberBox">
 						    <label for="recordNumber">No. of Records to Retrieve</label>
@@ -40,7 +40,7 @@
 						    <input type="search" class="form-control" id="end" placeholder="OPTIONAL">
 						  </div><br>
 
-					<button type="search" class="btn btn-primary" id="searchButton">Search</button>
+					<button type="submit" class="btn btn-primary" id="searchButton">Search</button>
 					<button type="clear" class="btn btn-danger" id="clearButton">Clear Results</button>
 			</form>
 	</div><br>
@@ -48,20 +48,12 @@
 		<div class="sectionTitle"><img class="articleicon" src="assets/articleicon.png">Top Articles</div><br>
 		<div id="resultsHere"></div>
 	</div>
-
-
-
-
-
-
-
-
 </div>
 
 
 
 
-
+<script type="text/javascript" src="assets/nyt.js"></script>
 
 </body>
 </html>
